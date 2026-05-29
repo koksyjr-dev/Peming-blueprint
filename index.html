@@ -3,117 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple (Mock) - Store</title>
+    <title>PEMING | Foundational Blueprint</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="nav-bar">
+    <header>
         <div class="nav-container">
-            <a href="#" class="nav-logo"><i class="fa-brands fa-apple"></i></a>
-            <div class="nav-links">
-                <a href="#">Store</a>
-                <a href="#">Mac</a>
-                <a href="#">iPad</a>
-                <a href="#">iPhone</a>
-                <a href="#">Watch</a>
-                <a href="#">Support</a>
-            </div>
-            <div class="nav-icons">
-                <a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#" class="bag-btn" id="cart-toggle">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="cart-count" id="cart-count">0</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">iPhone 16 Pro</h1>
-            <p class="hero-subtitle">Built for Apple Intelligence.</p>
-            <div class="hero-cta">
-                <a href="#" class="cta-link">Learn more <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#store-section" class="cta-link buy-btn">Buy <i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-        </div>
-        <div class="hero-image-container">
-            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=80" alt="iPhone 16 Pro" class="hero-image">
+            <a href="#" class="logo">PEMING</a>
+            <nav>
+                <a href="#identity">Identity</a>
+                <a href="#services">Pillars</a>
+                <a href="#itineraries">Expeditions</a>
+                <a href="#membership">Access</a>
+                <a href="#launch">Launch</a>
+            </nav>
         </div>
     </header>
 
-    <main id="store-section" class="store-section">
-        <div class="section-container">
-            <h2 class="section-title">Which model is right for you?</h2>
+    <section id="hero">
+        <h1 class="hero-title">PEMING</h1>
+        <p class="hero-subtitle">The Final Frontier of Experiential Sovereignty</p>
+        <button class="cta-btn" onclick="openGate()">Request Entry</button>
+    </section>
+
+    <section id="identity" class="section-padding container fade-in-section">
+        <span class="sub-heading">01 / Brand Core</span>
+        <h2 class="serif-heading">Manifesto & Identity</h2>
+        
+        <div class="manifesto-layout">
+            <div class="manifesto-text">
+                <p>
+                    For those who command empires, disrupt industries, and inherit histories, 
+                    the traditional definitions of luxury have grown obsolete. Five stars 
+                    are no longer enough when the entire sky can be rewritten. True luxury 
+                    is not a product to be acquired, nor a destination to be booked; it is 
+                    a distortion of reality. It is the absolute eradication of friction, 
+                    executed with invisible mastery.
+                </p>
+                <p>
+                    PEMING exists entirely in the quiet margins of the known map. We do not 
+                    curate holidays; we architect ephemeral legacies. We bend the global 
+                    apparatus of hospitality, logistics, and private diplomacy to the 
+                    singular whims of the world’s elite. Where standard luxury promises 
+                    comfort, PEMING orchestrates the impossible.
+                </p>
+                <p>
+                    Our philosophy rests upon absolute discretion. We are the architects 
+                    of the unrepeatable and the keepers of the unrecorded. For those who 
+                    own everything, we deliver the only currency that matters: time, 
+                    absolute isolation, and unforgettable wonder.
+                </p>
+            </div>
             
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all">All Models</button>
-                <button class="filter-tab" data-filter="iphone">iPhone</button>
-                <button class="filter-tab" data-filter="mac">Mac</button>
-                <button class="filter-tab" data-filter="ipad">iPad</button>
-            </div>
-
-            <div class="product-grid" id="product-grid">
+            <div class="sidebar-content">
+                <div class="tone-box">
+                    <h3 class="box-heading">Tone of Voice</h3>
+                    
+                    <div class="tone-item">
+                        <h4>Understated Authority</h4>
+                        <p>We speak with the quiet confidence of an entity that never needs to loud-advertise. We state impossibilities as foregone conclusions.</p>
+                    </div>
+                    
+                    <div class="tone-item">
+                        <h4>Deeply Refined & Cryptic</h4>
+                        <p>Avoid industry jargon like "VIP" or "luxury packages." Use cerebral language focused on legacy, isolation, and spatial sovereignty.</p>
+                    </div>
+                    
+                    <div class="tone-item">
+                        <h4>Absolute Discretion</h4>
+                        <p>We do not name-drop. Our references are systemic, poetic, and entirely secure.</p>
+                    </div>
                 </div>
-        </div>
-    </main>
 
-    <div class="cart-overlay" id="cart-overlay">
-        <div class="cart-panel">
-            <div class="cart-header">
-                <h3>Review your Bag.</h3>
-                <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+                <h3 class="box-heading" style="margin-top: 40px;">The Taglines</h3>
+                <ul class="tagline-list">
+                    <li>The Architecture of Impossibility.</li>
+                    <li>Sovereignty in Motion.</li>
+                    <li>Beyond the Horizon of the Known.</li>
+                    <li>The Ultimate Luxury is Disappearance.</li>
+                    <li>Curated for the Few. Witnessed by the Earth.</li>
+                </ul>
             </div>
-            <div class="cart-items" id="cart-items">
-                <p class="empty-message">Your Bag is empty.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding container fade-in-section">
+        <span class="sub-heading">02 / Ecosystem</span>
+        <h2 class="serif-heading">Signature Service Pillars</h2>
+        
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <span class="pillar-num">Ⅰ</span>
+                <h3>The Ghost Concierge</h3>
+                <p>
+                    An invisible, deeply anticipatory lifestyle management ecosystem. 
+                    Operating entirely outside standard channels, our strategists use 
+                    predictive psychographic modeling to orchestrate your desires before 
+                    they manifest. Your preferred vintage is breathing; your sanctuary 
+                    is climate-synchronized; your presence is anticipated, never announced.
+                </p>
             </div>
-            <div class="cart-footer">
-                <div class="cart-total">
-                    <span>Total:</span>
-                    <span id="cart-total-price">$0.00</span>
+            
+            <div class="pillar-card">
+                <span class="pillar-num">Ⅱ</span>
+                <h3>Imaginative Expeditions</h3>
+                <p>
+                    Unrepeatable, boundary-defying itineraries built completely from a 
+                    blank sheet of paper. We secure access to closed sovereign archives, 
+                    establish temporary ultra-luxury outposts in geographically 
+                    inaccessible terrains, and commission world authorities—from master 
+                    historians to Nobel laureates—as your personal companions.
+                </p>
+            </div>
+            
+            <div class="pillar-card">
+                <span class="pillar-num">Ⅲ</span>
+                <h3>Frictionless Transit</h3>
+                <p>
+                    Sovereign-level logistics tailored for the geopolitical elite. 
+                    Seamless private aviation interlinking with custom superyacht 
+                    deployments, backed by military-grade security infrastructure disguised 
+                    expertly as flawless, intuitive hospitality staff. Complete radar-dark 
+                    privacy protocols are default standard.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="itineraries" class="section-padding container fade-in-section">
+        <span class="sub-heading">03 / Curations</span>
+        <h2 class="serif-heading">The Unrepeatable Journeys</h2>
+        
+        <div class="itinerary-showcase">
+            <div class="itinerary-row">
+                <div class="itinerary-visual"></div>
+                <div class="itinerary-content">
+                    <span class="itinerary-meta">Ultra-Private Wellness / Relaxation</span>
+                    <h3>Project Borealis: The Glacial Sanctuary</h3>
+                    <p><strong>Location:</strong> Queen Maud Land, Antarctica</p>
+                    <p>An absolute retreat into nothingness. Guests reside within a temporarily engineered, structurally sound heated glass biosphere deployed on an unexplored, silent ice shelf. The experience features personalized cellular-regeneration therapies led by a prominent European longevity scientist.</p>
+                    <div class="impossible-access-badge">The Closed Door Private Acoustic Ice Cavern Concert</div>
+                    <p style="margin-top: 30px;">
+                        <em class="gold-text">The Impossible Access:</em> 
+                        A world-renowned neo-classical pianist is flown in along with a bespoke grand piano to perform a private recital inside a cathedral-sized, acoustically perfect ice cavern, completely illuminated by internal fiber-optics. A multi-course pairing menu is served by a 3-Michelin-starred chef, utilizing pure water extracted from 10,000-year-old glacial cores.
+                    </p>
                 </div>
-                <button class="checkout-btn">Check Out</button>
+            </div>
+
+            <div class="itinerary-row reverse">
+                <div class="itinerary-visual"></div>
+                <div class="itinerary-content">
+                    <span class="itinerary-meta">High-Octane Adventure</span>
+                    <h3>Project Apex: The Atacama Velocity</h3>
+                    <p><strong>Location:</strong> Atacama Desert, Chile & Suborbital Space</p>
+                    <p>A multi-stage aerodynamic and terrestrial rush designed for the tech elite. The journey commences with a private Mach-2 ascent to the edge of the stratosphere via a stripped-down, modified tactical jet to view the true curvature of the Earth in total silence.</p>
+                    <div class="impossible-access-badge">Ministerial Desert Closure Decree</div>
+                    <p style="margin-top: 30px;">
+                        <em class="gold-text">The Impossible Access:</em> 
+                        Upon touchdown at a private military airfield, the entire Atacama Salt Flats are closed to the public by an exclusive ministerial decree. Under a pitch-black cosmic sky, the client commands an unreleased million-dollar hypercar prototype on a custom-mapped track, guided solely by military-grade thermal telemetry and private satellite lighting arrays.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="modal-overlay" id="config-modal">
+    <section id="membership" class="section-padding container fade-in-section">
+        <span class="sub-heading">04 / Scarcity</span>
+        <h2 class="serif-heading">Membership & Access Architecture</h2>
+        
+        <div class="membership-layout">
+            <div>
+                <p style="line-height: 1.8; color: var(--text-muted); margin-bottom: 25px;">
+                    PEMING does not compete on scale. We optimize strictly for artificial scarcity. True elite status is defined not by what it includes, but by who it systematically excludes. Our framework is designed as a sovereign club rather than a retail service.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-muted); margin-bottom: 25px;">
+                    Admission requires a formal invitation or the written endorsement of two existing active members, followed by review by our executive board. Wealth alone is a prerequisite; alignment of vision is the final determinant.
+                </p>
+                <button class="cta-btn" onclick="openGate()">Initiate Credentials</button>
+            </div>
+            
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-val">100</span>
+                    <span class="stat-lbl">Global Cap (Active Members)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-val">$250k</span>
+                    <span class="stat-lbl">Initiation Premium</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-val">$150k</span>
+                    <span class="stat-lbl">Annual Retainer</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-val">2</span>
+                    <span class="stat-lbl">Member Endorsements</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="launch" class="section-padding container fade-in-section" style="border-bottom: none;">
+        <span class="sub-heading">05 / Deployment</span>
+        <h2 class="serif-heading">Discreet Launch Framework</h2>
+        
+        <div class="launch-timeline">
+            <div class="launch-step">
+                <span class="step-phase">Phase I</span>
+                <div class="step-details">
+                    <h4>The Obsidian Letter</h4>
+                    <p>Eschewing all digital media, we will commission the crafting of 150 solid obsidian artifacts. Each stone is laser-etched with a singular cryptographic access pass and hand-delivered via private diplomatic courier to a pre-selected roster of the world's top family office heads, tech founders, and sovereign entities. No explanatory text will accompany it—only a private domain address.</p>
+                </div>
+            </div>
+
+            <div class="launch-step">
+                <span class="step-phase">Phase II</span>
+                <div class="step-details">
+                    <h4>The Nocturne Salons</h4>
+                    <p>A sequence of four unrecorded, single-evening dinner gatherings hosted globally (London, New York, Tokyo, Dubai). Venues will include highly restricted spaces—such as private museum vaults or historical estates closed after hours. No photography or mobile devices are permitted. The concept of PEMING is articulated strictly through spoken storytelling by our founders to 8 guests per salon.</p>
+                </div>
+            </div>
+
+            <div class="launch-step">
+                <span class="step-phase">Phase III</span>
+                <div class="step-details">
+                    <h4>The Sovereign Alliance Ecosystem</h4>
+                    <p>Establishing exclusive white-glove partnerships with elite superyacht shipyards (e.g., Lürssen) and private aerospace manufacturers (e.g., Gulfstream). PEMING will not appear on promotional materials; instead, it is delivered as an unlisted, closed-loop lifestyle amenity extended directly by relationship managers to elite clients executing asset acquisitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="gateModal">
         <div class="modal-content">
-            <button class="close-modal" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
-            <div class="modal-body" id="modal-body">
-                </div>
+            <button class="close-modal" onclick="closeGate()">×</button>
+            <h3 class="modal-title">Verify Identity</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px;">Enter your bespoke PEMING cryptographic invitation token.</p>
+            <input type="text" class="modal-input" id="tokenInput" placeholder="••••-••••-••••" maxlength="14">
+            <button class="cta-btn" style="width: 100%;" onclick="verifyToken()">Verify Access</button>
+            <p id="feedback"></p>
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <p class="footer-note">1. Apple Intelligence available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max with Siri and device language set to U.S. English, as part of an iOS 18 update.</p>
-            <hr class="footer-divider">
-            <div class="footer-links-grid">
-                <div>
-                    <h4>Explore</h4>
-                    <a href="#">Mac</a>
-                    <a href="#">iPad</a>
-                    <a href="#">iPhone</a>
-                    <a href="#">Watch</a>
-                </div>
-                <div>
-                    <h4>Apple Values</h4>
-                    <a href="#">Accessibility</a>
-                    <a href="#">Environment</a>
-                    <a href="#">Privacy</a>
-                </div>
-                <div>
-                    <h4>Account</h4>
-                    <a href="#">Manage Your Apple ID</a>
-                    <a href="#">Apple Store Account</a>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <p class="footer-copyright">Copyright © 2026 Apple Inc. All rights reserved.</p>
-        </div>
+    <footer>
+        PEMING PRIVATE OFFICE © 2026 — ALL SOVEREIGN RIGHTS RESERVED.
     </footer>
 
     <script src="script.js"></script>
